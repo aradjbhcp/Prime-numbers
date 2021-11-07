@@ -1,0 +1,12 @@
+num = int(input('Please enter where you want to find prime numbers befor that : '))
+
+flag = True
+
+for i in range(2,num):
+   flag = True
+   for j in range(2,i):
+      if i % j == 0:
+         flag = False
+   if flag:
+      print(i)
+         
